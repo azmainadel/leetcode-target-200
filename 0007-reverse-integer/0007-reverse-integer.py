@@ -1,9 +1,10 @@
 class Solution:
     def reverse(self, x: int) -> int:
-        reverse_string = str(abs(x))[::-1]
-        res = int(reverse_string)
+        rev_x = int(str(abs(x))[::-1]) # -123 -> 123 -> 321(str) -> 321(int)
 
-        if res.bit_length() >= 32:
+        if rev_x.bit_length() >= 32:
             return 0
         else:
-            return res if x > 0 else -res
+            return rev_x if x > 0 else -rev_x
+
+        
