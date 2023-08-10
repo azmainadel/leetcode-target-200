@@ -30,11 +30,9 @@ class TimeMap:
                 else:
                     r = m - 1
 
-            print(l, r)
             if r >= 0:
                 return values[r][0]
-            # else:
-            #     return values[l][0]
+                
         return ""
 
 
